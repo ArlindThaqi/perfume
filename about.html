@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Css/about.css">
+  <link rel="stylesheet" href="./Css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+<nav>
+  <div class="logo">
+    <h1>Perfume</h1>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="ri-menu-line"></i>
+  </div>
+
+  <div class="links" id="nav-links">
+    <ul>
+      <li><a href="index.html" class="hover-link">Shop</a></li>
+      <li><a href="collections.html" class="hover-link">Collections</a></li>
+      <li><a href="#" class="hover-link active">About</a></li>
+      <li><a href="contact.html" class="hover-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="icon">
+    <i class="ri-search-line ri-lg"></i>
+    <i class="ri-user-line ri-lg"></i>
+    <i class="ri-shopping-bag-line ri-lg"></i>
+  </div>
+</nav>
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+<div class="header2">
+  <h1>Our <span>Heritage</span></h1>
+  <p>Since 1897, Maison Lumière has crafted exquisite fragrances that capture the essence of luxury and artistry. <br>
+    Our journey is one of passion, innovation, and unwavering commitment to perfection.</p>
+  <button>Discover Our Story</button>
+</div>
+
+<section class="Sektori" >
+  <div class="exellence">
+    <h2>A Legacy of <span>Excellence</span></h2>
+    <p>For over a century, our master perfumers have been creating olfactory masterpieces that transcend time. <br>
+      Each fragrance tells a story, each bottle holds a memory, and each scent is a work of art.</p>
+  </div>
+  <div class="years" data-aos="flip-up" data-aos-delay="350">
+    <div class="year">
+      <h2>1902</h2>
+      <h3>Perfume is Born</h3>
+      <p>Founded in Grasse, France, Perfume began with a passion for crafting scents that stir the soul.</p>
+    </div>
+    <div class="year">
+      <h2>1935</h2>
+      <h3>Signature Scent</h3>
+      <p>The debut of our classic “Lueur” fragrance captured hearts and became a symbol of timeless sophistication.
+      </p>
+    </div>
+    <div class="year">
+      <h2>1968</h2>
+      <h3>Worldwide Presence</h3>
+      <p>Perfume opened its doors in London, Dubai, and Tokyo — becoming a global ambassador of French elegance.</p>
+    </div>
+    <div class="year">
+      <h2>2001</h2>
+      <h3>Modern Craftsmanship</h3>
+      <p>Blending tradition with innovation, we introduced sustainable sourcing without compromising on luxury.</p>
+    </div>
+    <div class="year">
+      <h2>Today</h2>
+      <h3>Perfume Reimagined</h3>
+      <p>Redefining luxury with bold new blends, Perfume continues to inspire through innovation, elegance, and
+        mindful creation.</p>
+    </div>
+  </div>
+</section>
+
+<div class="sektori2">
+  <div class="artisanal">
+    <div>
+      <img src="images/perfume-cre.png" alt="">
+    </div>
+    <div class="artisanal-tx">
+      <div class="artisanal-txx">
+        <h2>Artisanal <span>Craftsmanship</span></h2>
+        <p>Every Maison Lumière fragrance is meticulously crafted using time-honored techniques passed down through
+          generations. Our perfumers train for decades to develop their extraordinary olfactory abilities and creative
+          vision.</p>
+      </div>
+      <div class="f1-y">
+        <div class="f-y">
+          <h1>125+</h1>
+          <p>Years of Expertise</p>
+        </div>
+        <div class="f-y">
+          <h1>300+</h1>
+          <p>Unique Fragrances</p>
+        </div>
+      </div>
+      <div class="f2-y">
+        <div class="f-y">
+          <h1>60+</h1>
+          <p>Master Perfumers</p>
+        </div>
+        <div class="f-y">
+          <h1>12</h1>
+          <p>International Awards</p>
+        </div>
+      </div>
+      <div class="ex-button">
+        <button>Explore Our Process</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="core">
+  <h2>Our Core <span>Values</span></h2>
+</div>
+
+<div class="years1">
+  <div class="year1">
+    <h2><i class="ri-leaf-line text-primary ri-2x"></i></h2>
+    <h3 id="f1">Sustainability</h3>
+    <p>Founded in Grasse, France, Perfume began with a passion for crafting scents that stir the soul.</p>
+  </div>
+  <div class="year1">
+    <h2><i class="ri-flask-line text-primary ri-2x"></i></h2>
+    <h3>Innovation</h3>
+    <p>The debut of our classic “Lueur” fragrance captured hearts and became a symbol of timeless sophistication.
+    </p>
+  </div>
+  <div class="year1">
+    <h2><i class="ri-history-line text-primary ri-2x"></i></h2>
+    <h3 id="f3">Tradition</h3>
+    <p>Perfume opened its doors in London, Dubai, and Tokyo — becoming a global ambassador of French elegance.</p>
+  </div>
+</div>
+
+<div class="ourleadership">
+  <div class="ourleadership-text">
+    <h1>Meet <span>Our</span> Leadership <span>Team</span></h1>
+    <p>The passionate individuals behind DocFind
+      who are dedicated to improving healthcare access for everyone.</p>
+  </div>
+  <div class="ourleadership-cards">
+    <div class="ourleadership-card" data-aos="fade-up-right" data-aos-offset="300">
+      <div class="ourleader-image1">
+      </div>
+      <div class="leader-info">
+        <h1 class="ourleader-name">Isabelle <span>Laurent</span></h1>
+        <h2 class="ourleader-role">Head Perfumer</h2>
+        <p class="ourleader-info">With over 25 years of experience, <br> Isabelle brings an unparalleled
+          sensitivity to floral compositions and is the creator of our award-winning "Jardin Secret" collection.</p>
+      </div>
+    </div>
+    <div class="ourleadership-card" data-aos="fade-up" data-aos-offset="300">
+      <div class="ourleader-image2">
+      </div>
+      <div class="leader-info">
+        <h1 class="ourleader-name">Jean-Philippe <span>Moreau</span></h1>
+        <h2 class="ourleader-role">Senior Perfumer</h2>
+        <p class="ourleader-info">A third-generation perfumer, <br> Jean-Philippe specializes in woody and spicy
+          compositions that have become the cornerstone of our masculine fragrance line.</p>
+      </div>
+    </div>
+    <div class="ourleadership-card" data-aos="fade-up-left" data-aos-offset="300">
+      <div class="ourleader-image3">
+      </div>
+      <div class="leader-info">
+        <h1 class="ourleader-name">Sophie <span>Chen</span></h1>
+        <h2 class="ourleader-role">Innovation Director</h2>
+        <p class="ourleader-info">Leading our contemporary collections, Sophie brings a fresh perspective
+          to traditional perfumery, creating bold, innovative scents that appeal to modern sensibilities.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="exellence">
+  <h2>A Legacy of <span>Excellence</span></h2>
+  <p>For over a century, our master perfumers have been creating olfactory masterpieces that transcend time. <br>
+    Each fragrance tells a story, each bottle holds a memory, and each scent is a work of art.</p>
+</div>
+<div data-aos="flip-left">
+  <div class="div">
+    <div class="box">
+      <h2>01</h2>
+      <h3>Inspiration & Concept</h3>
+      <p>Our perfumers draw inspiration from art, nature, and culture to develop a conceptual framework for each
+        fragrance.</p>
+    </div>
+    <div class="box">
+      <h2>02</h2>
+      <h3>Ingredient Selection</h3>
+      <p>We source the finest raw materials from around the world, selecting only those that meet our rigorous quality
+        standards.
+      </p>
+    </div>
+    <div class="box">
+      <h2>03</h2>
+      <h3>Composition & Refinement</h3>
+      <p>Through hundreds of iterations, our perfumers meticulously blend ingredients to achieve the perfect harmony of
+        notes.</p>
+    </div>
+    <div class="box">
+      <h2>04</h2>
+      <h3>Maturation & Bottling</h3>
+      <p>Each fragrance matures for optimal development before being carefully bottled in our signature vessels.</p>
+    </div>
+  </div>
+</div>
+
+<div class="book"><button>Book a Studio Tour</button></div>
+
+<section class="sektori3">
+  <div class="recognition">
+    <h1>Awards <span>&</span> Recognition</h1>
+  </div>
+  <div class="awards">
+    <div data-aos="fade-right">
+      <div class="award">
+        <h2><i class="ri-award-line text-primary ri-2x"></i></h2>
+        <h3>FiFi Awards</h3>
+        <p>Fragrance Foundation Excellence Award 2023</p>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      <div class="award">
+        <h2><i class="ri-star-line text-primary ri-2x"></i></h2>
+        <h3>Luxury Lifestyle</h3>
+        <p>Best Luxury Fragrance House 2022</p>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      <div class="award">
+        <h2><i class="ri-medal-line text-primary ri-2x"></i></h2>
+        <h3>Sustainable Luxury</h3>
+        <p>Green Innovation Award 2023</p>
+      </div>
+    </div>
+    <div data-aos="fade-left">
+      <div class="award">
+        <h2><i class="ri-vip-crown-line text-primary ri-2x"></i></h2>
+        <h3>Vogue Beauty</h3>
+        <p>Editor's Choice Award 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div2">
+  <div>
+    <h2>Featured <span>In</span></h2>
+  </div>
+  <div class="marks">
+    <p>VOGUE</p>
+    <p>ELLE</p>
+    <p>HARPER'S BAZAAR</p>
+    <p>GQ</p>
+    <p>VANITY FAIR</p>
+  </div>
+</div>
+
+<div class="div3">
+  <h2>Experience <span>Our Hertiage</span></h2>
+  <p>Visit one of our boutiques to experience the artistry and craftsmanship that defines Maison Lumière. Our fragrance experts will guide you through our collections to find your perfect scent.</p>
+  <div class="boutique">
+    <button id="div3-1"><span>Find a Boutique</span></button>
+    <button id="div3-2">Book a Consultation</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h2 class="footer-logo">Perfume</h2>
+      <p class="footer-text">
+        Crafting exquisite fragrances that capture moments of luxury and elegance since 2010.
+      </p>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-pinterest-p"></i>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>Shop All</li>
+        <li>Collections</li>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Customer Service</h3>
+      <ul>
+        <li>Shipping & Returns</li>
+        <li>Track Order</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+        <li>Gift Cards</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <ul class="contact-info">
+        <li><i class="fas fa-map-marker-alt"></i> 41, Ziaver Vllasaliu, Prishtine</li>
+        <li><i class="fas fa-phone-alt"></i> +383 *** 234</li>
+        <li><i class="fas fa-envelope"></i> perfume@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<div class="end">
+  <p>© 2025 Luxury Perfume. All rights reserved.</p>
+  <div>
+    <i class="ri-visa-fill ri-lg text-gray-300"></i>
+    <i class="ri-mastercard-fill ri-lg text-gray-300"></i>
+    <i class="ri-paypal-fill ri-lg text-gray-300"></i>
+    <i class="ri-apple-fill ri-lg text-gray-300"></i>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>

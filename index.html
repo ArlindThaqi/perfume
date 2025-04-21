@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./Css/style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1>Perfume</h1>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="ri-menu-line"></i>
+    </div>
+
+    <div class="links" id="nav-links">
+      <ul>
+        <li><a href="#" class="hover-link active">Shop</a></li>
+        <li><a href="collections.html" class="hover-link">Collections</a></li>
+        <li><a href="about.html" class="hover-link">About</a></li>
+        <li><a href="contact.html" class="hover-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="icon">
+      <i class="ri-search-line ri-lg"></i>
+      <i class="ri-user-line ri-lg"></i>
+      <i class="ri-shopping-bag-line ri-lg"></i>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div style="display: flex; flex-direction: column;align-items: center;">
+      <h1 class="header-text1">
+        Shop Our Wide <span class="header-text2">Selection of Scents</span>
+      </h1>
+      <p class="header-text3">
+        Discover our exclusive collection of handcrafted perfumes that capture the essence of luxury and
+        sophistication.
+      </p>
+      <div class="header-buttons">
+        <button id="button1">Explore Collection</button>
+        <button id="button2">Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+
+  <section class="featured">
+    <h2><span>Featured</span> Fragrances</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="/images/perfume1.jpg" alt="Rosewood Bliss">
+        <h3>JPG Le Male Parfum</h3>
+        <p>is a warm, intense fragrance with spicy cardamom, floral lavender, and a rich base of vanilla, amber, and woods, creating a bold and masculine scent.</p>
+        <div class="price-cart">
+          <span>€130.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/images/perfume2.jpg" alt="Citrus Zest">
+        <h3>JPG Le Male Elixir</h3>
+        <p> is a powerful, seductive fragrance with spicy cardamom, aromatic lavender, and a rich blend of vanilla, leather, and woods, delivering a bold, magnetic scent.</p>
+        <div class="price-cart">
+          <span>€140.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/images/perfume3.jpg" alt="Woodland Walk">
+        <h3>Bleu De Chanel</h3>
+        <p> is a refined, woody fragrance with fresh citrus, warm sandalwood, and rich amber, creating a sophisticated, timeless scent.</p>
+        <div class="price-cart">
+          <span>€110.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="more">
+    <button>Show More</button>
+  </div>
+  <div class="bestseller">
+    <h3>Our <scent>Bestsellers</scent>
+    </h3>
+  </div>
+  <div>
+    <p class="fjalia">Discover our most sought-after fragrances that have captivated the senses of <br> our discerning
+      clientele around the world.</p>
+  </div>
+
+  <div>
+    <div class="card-wrapper">
+      <div class="card">
+        <i class="ri-award-fill ri-3x"></i>
+        <h4>Most Popular</h4>
+        <p class="teksti-kartave">Our best-selling fragrances loved by customers worldwide.</p>
+        <a href="#" class="view">View Collection</a>
+      </div>
+      <div class="card">
+        <i class="ri-star-fill ri-3x"></i>
+        <h4>Highest Rated</h4>
+        <p class="teksti-kartave">Customer favorites with exceptional reviews and ratings.</p>
+        <a href="#" class="view">View Collection</a>
+      </div>
+      <div class="card">
+        <i class="ri-fire-fill ri-3x"></i>
+        <h4>New Arrivals</h4>
+        <p class="teksti-kartave">Our latest creations that are setting new trends in fragrance.</p>
+        <a href="#" class="view">View Collection</a>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; padding-top: 70px;">
+    <div class="pjesa3">
+      <div class="email">
+        <div class="titulli">
+          <h1>Subscribe to Our <scent>Newsletter</scent>
+          </h1>
+        </div>
+        <div class="teksti1">
+          <p>Stay updated with our latest collections, exclusive offers, and fragrance <br> insights delivered directly to
+            your inbox.</p>
+        </div>
+        <div>
+          <input type="text" placeholder="Your email address" class="emailbar" />
+          <button class="sub">Subscribe</button>
+        </div>
+      </div>
+      <div class="foto">
+        <img src="/images/reklama1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h2 class="footer-logo">Perfume</h2>
+        <p class="footer-text">
+          Crafting exquisite fragrances that capture moments of luxury and elegance since 2010.
+        </p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Shop All</li>
+          <li>Collections</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li>Shipping & Returns</li>
+          <li>Track Order</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Gift Cards</li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> 41, Ziaver Vllasaliu, Prishtine</li>
+          <li><i class="fas fa-phone-alt"></i> +383 *** 234</li>
+          <li><i class="fas fa-envelope"></i> perfume@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="end">
+    <p>© 2025 Luxury Perfume. All rights reserved.</p>
+    <div>
+      <i class="ri-visa-fill ri-lg text-gray-300"></i>
+      <i class="ri-mastercard-fill ri-lg text-gray-300"></i>
+      <i class="ri-paypal-fill ri-lg text-gray-300"></i>
+      <i class="ri-apple-fill ri-lg text-gray-300"></i>
+    </div>
+  </div>
+</body>
+
+</html>

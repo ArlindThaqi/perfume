@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" href="./Css/contact.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <h1>Perfume</h1>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="ri-menu-line"></i>
+    </div>
+
+    <div class="links" id="nav-links">
+      <ul>
+        <li><a href="index.html" class="hover-link">Shop</a></li>
+        <li><a href="collections.html" class="hover-link">Collections</a></li>
+        <li><a href="about.html" class="hover-link">About</a></li>
+        <li><a href="#" class="hover-link active">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="icon">
+      <i class="ri-search-line ri-lg"></i>
+      <i class="ri-user-line ri-lg"></i>
+      <i class="ri-shopping-bag-line ri-lg"></i>
+    </div>
+  </nav>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+
+  <div class="perfumeshop">
+    <h1>Contact <span>Us</span></h1>
+    <p>We are dedicated to providing exceptional service. Our team is ready to assist you with any inquiries about our
+      luxury fragrances.</p>
+    <div class="perfume-bt">
+      <button id="get">Get in Touch</button>
+      <button id="find">Find a Store</button>
+    </div>
+  </div>
+
+  <section class="section1">
+    <div class="kutiat">
+      <div class="kutia">
+        <button class="ikonat"><i class="ri-phone-line ri-xl text-primary"></i></button>
+        <h2>Call Us</h2>
+        <p>Our customer service team is available to assist you</p>
+        <a href="#">+1 (800) 555-0123</a>
+      </div>
+      <div class="kutia">
+        <button class="ikonat"><i class="ri-mail-line ri-xl text-primary"></i></button>
+        <h2>Email Us</h2>
+        <p>Send us an email and we'll respond within 24 hours</p>
+        <a href="#">contact@luxuryperfumes.com</a>
+      </div>
+      <div class="kutia">
+        <button class="ikonat"><i class="ri-time-line ri-xl text-primary"></i></button>
+        <h2>Business Hours</h2>
+        <p>Monday - Saturday: 10am - 8pm</p>
+        <p>Sunday: 11am - 6pm</p>
+      </div>
+      <div class="kutia">
+        <button class="ikonat"><i class="ri-customer-service-line ri-xl text-primary"></i></button>
+        <h2>Live Chat</h2>
+        <p>Chat with our team for immediate assistance</p>
+        <button id="start">Start Chat</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2">
+
+    <h2><span>Send</span> Us a <span>Message</span></h2>
+    <p>We'd love to hear from you. Whether you have a question about our products, need assistance with an order, or
+      want to provide feedback, our team is here to help.</p>
+    <div class="contact-form">
+      <div class="form-group">
+        <div class="form-control">
+          <label for="name">Full Name <span>*</span></label>
+          <input type="text" id="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-control">
+          <label for="email">Email Address <span>*</span></label>
+          <input type="email" id="email" placeholder="Your email address" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-control">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Your phone number">
+        </div>
+        <div class="form-control">
+          <label for="subject">Subject <span>*</span></label>
+          <select id="subject" required>
+            <option value="">Order Status</option>
+            <option value="support">Support</option>
+            <option value="inquiry">General Inquiry</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label for="message">Message <span>*</span></label>
+          <textarea id="message" placeholder="Your message" required></textarea>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="privacy" required>
+          <label for="consent">I agree to the <a href="#">Privacy Policy</a> and consent to having my data
+            processed.</label>
+        </div>
+
+        <div class="submit-button">
+          <button type="submit">Send Message</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <h2>Our <span>Boutique</span> Locations</h2>
+    <p>Visit one of our luxury boutiques for a personalized fragrance consultation and experience our collections in
+      person.</p>
+    <div class="locations">
+      <div class="location">
+        <img src="images/perfumeshops1.jpg" alt="">
+        <h3><span>New York</span> Flagship</h3>
+        <div class="items">
+          <div class="icona"><i class="ri-map-pin-line"></i></div>
+          <p>123 Fifth Avenue<br>New York, NY 10010<br>United States</p>
+        </div>
+        <div class="items">
+          <div class="icona"><i class="ri-phone-line"></i></div>
+          <p>+1 (212) 555-0123</p>
+        </div>
+        <div class="items">
+          <div class="icona"><i class="ri-time-line"></i></div>
+          <p>Monday - Saturday: 10am - 8pm<br>Sunday: 11am - 6pm</p>
+        </div>
+        <div id="map">
+          <button>View on Map</button>
+        </div>
+      </div>
+      <div class="location">
+        <img src="images/perfumeshops1.jpg" alt="">
+        <h3><span>New York</span> Flagship</h3>
+        <div class="items">
+          <div class="icona"><i class="ri-map-pin-line"></i></div>
+          <p>123 Fifth Avenue<br>New York, NY 10010<br>United States</p>
+        </div>
+        <div class="items">
+          <div class="icona"><i class="ri-phone-line"></i></div>
+          <p>+1 (212) 555-0123</p>
+        </div>
+        <div class="items">
+          <div class="icona"><i class="ri-time-line"></i></div>
+          <p>Monday - Saturday: 10am - 8pm<br>Sunday: 11am - 6pm</p>
+        </div>
+        <div id="map">
+          <button>View on Map</button>
+        </div>
+      </div>
+      <div class="location">
+        <img src="images/perfumeshops1.jpg" alt="">
+        <h3><span>New York</span> Flagship</h3>
+        <div class="items">
+          <div class="icona"><i class="ri-map-pin-line"></i></div>
+          <p>123 Fifth Avenue<br>New York, NY 10010<br>United States</p>
+        </div>
+        <div class="items">
+          <div class="icona"><i class="ri-phone-line"></i></div>
+          <p>+1 (212) 555-0123</p>
+        </div>
+        <div class="items">
+          <div class="icona"><i class="ri-time-line"></i></div>
+          <p>Monday - Saturday: 10am - 8pm<br>Sunday: 11am - 6pm</p>
+        </div>
+        <div id="map">
+          <button>View on Map</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11774.4775898846!2d20.518276621580924!3d42.45711352011399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353a61c87b7bedd%3A0xbb31f4d20f74f711!2sQifllak%2021050!5e0!3m2!1sen!2s!4v1745020622497!5m2!1sen!2s"
+      width="80%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      style="border-radius: 10px;"></iframe>
+  </div>
+
+  <div class="store">
+    <h2>Find a Store <span>Near You</span></h2>
+  </div>
+
+  <div class="locationn">
+    <input type="text" placeholder="Enter your location" class="locationbar" />
+    <button class="search">Search</button>
+  </div>
+
+
+  <div class="frequently">
+    <div class="frequently-tx">
+      <h2>Frequently Asked <span>Questions</span></h2>
+      <p>Find answers to common questions about our products, ordering process, and policies.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is your return policy? <span class="toggle-icon"></span></h3>
+      <div class="faq-answer">
+        We offer a 30-day return policy for all unopened and unused products. If you're not <br>
+        completely satisfied with your purchase, you may return it for a full refund or exchange.
+        Please note that personalized items and sample sets are not eligible for return. Contact
+        our customer service team to initiate a return.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you offer international shipping? <span class="toggle-icon"></span></h3>
+      <div class="faq-answer">
+        Yes, we ship to most countries worldwide. International shipping rates and delivery times <br>
+        vary depending on the destination. Please note that customers are responsible for any customs
+        duties, taxes, or import fees that may apply. You can view estimated shipping costs during checkout
+        before completing your purchase.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>How can I track my order? <span class="toggle-icon"></span></h3>
+      <div class="faq-answer">
+        Once your order has been shipped, you will receive a confirmation email with a tracking <br>
+        number. You can use this tracking number on our website under "Track Order" or directly on the
+        carrier's website. If you have an account with us, you can also check your order status by
+        logging into your account and viewing your order history.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you offer samples before purchasing a full-size perfume? <span class="toggle-icon"></span></h3>
+      <div class="faq-answer">
+        Yes, we offer sample sets that allow you to experience our fragrances before committing <br>
+        to a full-size bottle. Our discovery sets include a curated selection of our most popular
+        scents in travel-friendly sizes. Additionally, orders over $150 qualify for three complimentary
+        samples of your choice at checkout.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Are your fragrances cruelty-free? <span class="toggle-icon"></span></h3>
+      <div class="faq-answer">
+        Yes, all of our fragrances are cruelty-free. We do not test our products on animals, nor do <br>
+        we work with suppliers who conduct animal testing. We are committed to ethical practices
+        and sustainability throughout our production process. Many of our fragrances are also
+        vegan-friendly, which is indicated on the product page.
+      </div>
+    </div>
+
+    <div class="contact">
+      <p>Can't find the answer you're looking for?</p>
+      <button id="contact-bt">Contact Us</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll(".faq-item").forEach(item => {
+      item.querySelector("h3").addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+  <div class="section4">
+    <div class="sub-border">
+      <h1>Subscribe to <span>Our Newsletter</span></h1>
+      <p>Stay updated with our latest collections, exclusive offers, and fragrance tips.</p>
+      <div class="emaill">
+        <input type="text" placeholder="Your email address" class="email-bar" />
+        <button class="subsc">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h2 class="footer-logo">Perfume</h2>
+        <p class="footer-text">
+          Crafting exquisite fragrances that capture moments of luxury and elegance since 2010.
+        </p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Shop All</li>
+          <li>Collections</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li>Shipping & Returns</li>
+          <li>Track Order</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Gift Cards</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> 41, Ziaver Vllasaliu, Prishtine</li>
+          <li><i class="fas fa-phone-alt"></i> +383 *** 234</li>
+          <li><i class="fas fa-envelope"></i> perfume@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="end">
+    <p>© 2025 Luxury Perfume. All rights reserved.</p>
+    <div>
+      <i class="ri-visa-fill ri-lg text-gray-300"></i>
+      <i class="ri-mastercard-fill ri-lg text-gray-300"></i>
+      <i class="ri-paypal-fill ri-lg text-gray-300"></i>
+      <i class="ri-apple-fill ri-lg text-gray-300"></i>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

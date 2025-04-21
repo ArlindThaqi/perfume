@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Css/collections.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./Css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1>Perfume</h1>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="ri-menu-line"></i>
+    </div>
+
+    <div class="links" id="nav-links">
+      <ul>
+        <li><a href="index.html" class="hover-link">Shop</a></li>
+        <li><a href="#" class="hover-link active">Collections</a></li>
+        <li><a href="about.html" class="hover-link">About</a></li>
+        <li><a href="contact.html" class="hover-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="icon">
+      <i class="ri-search-line ri-lg"></i>
+      <i class="ri-user-line ri-lg"></i>
+      <i class="ri-shopping-bag-line ri-lg"></i>
+    </div>
+  </nav>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  <div class="header1">
+    <div>
+      <h1 class="header1-text1">
+        Our Exclusive <span class="header1-text2">Collections</span>
+      </h1>
+      <p class="header1-text3">
+        Discover our meticulously crafted perfume collections, each telling a unique olfactory story. From the mystical
+        allure of Midnight Jasmine to the timeless elegance of our Signature series.
+      </p>
+      <div class="header1-buttons">
+        <button id="button3">Explore All Collection</button>
+        <button id="button4">Shop Individual Fragrances</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="display: flex; justify-content: center;">
+    <div class="collection">
+      <div class="collection-tx">
+        <h2>Featured <span>Collection</span></h2>
+        <p>Emporio Armani - Our newest collection</p>
+      </div>
+      <div class="shop">
+        <button>Shop This Collection</button>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <div class="new">
+      <div id="fotoja">
+        <img src="images/armani.jpg" alt="">
+      </div>
+      <div class="Ncollection">
+        <p id="title"><span>New Collection</span></p>
+        <h2>Emporio Armani</h2>
+        <p id="p1">A captivating series of fragrances inspired by the elegance and charm of modern life. Each scent
+          embodies a
+          unique facet of sophistication, from fresh citrus notes to warm, sensual woods, creating a collection that
+          is both timeless and contemporary.</p>
+        <ul>
+          <li><i class="ri-check-line text-primary"></i> 5 Distinct Fragrances</li>
+          <li><i class="ri-check-line text-primary"></i> Limited Edition Packaging</li>
+          <li><i class="ri-check-line text-primary"></i> Complimentary Travel Atomizer</li>
+        </ul>
+        <p id="p2">Starting from</p>
+        <p style="font-size: 24px; font-weight: bold; color: #FCD34D; margin-top: 7px;">€185.00</p>
+        <button>Discover Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="browse">
+    <div class="browse1">
+      <h2>Browse Our <span>Collections</span></h2>
+      <p id="p3">Showing all 12 collections</p>
+    </div>
+    <div class="list">
+      <div class="butonat" style="display: flex; ">
+        <button id="buton1">All</button>
+        <button id="buton2">Floral</button>
+        <button id="buton3">Woody</button>
+        <button id="buton4">Fresh</button>
+        <button id="buton5">Oriental</button>
+        <button id="buton6">Citrus</button>
+      </div>
+      <div>
+        <select name="sort" id="sort">
+          <option value="newest">Newest</option>
+          <option value="popular">Popular</option>
+          <option value="priceh">Price: High to Low</option>
+          <option value="pricel">Price: Low to high</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="perfumes">
+      <div class="perfume">
+        <img src="/images/perfume1.jpg" alt="Rosewood Bliss">
+        <h3>JPG Le Male Parfum</h3>
+        <p>is a warm, intense fragrance with spicy cardamom, floral lavender, and a rich base of vanilla, amber, and
+          woods, creating a bold and masculine scent.</p>
+        <div class="prices">
+          <span>5 Fregrances</span>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+      <div class="perfume">
+        <img src="/images/perfume2.jpg" alt="Citrus Zest">
+        <h3>JPG Le Male Elixir</h3>
+        <p> is a powerful, seductive fragrance with spicy cardamom, aromatic lavender, and a rich blend of vanilla,
+          leather, and woods, delivering a bold, magnetic scent.</p>
+        <div class="prices">
+          <span>4 Fregrances</span>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+      <div class="perfume">
+        <img src="/images/perfume3.jpg" alt="Woodland Walk">
+        <h3>Bleu De Chanel</h3>
+        <p> is a refined, woody fragrance with fresh citrus, warm sandalwood, and rich amber, creating a sophisticated,
+          timeless scent.</p>
+        <div class="prices">
+          <span>3 Fregrances</span>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="/images/perfume1.jpg" alt="Rosewood Bliss">
+        <h3>JPG Le Male Parfum</h3>
+        <p>is a warm, intense fragrance with spicy cardamom, floral lavender, and a rich base of vanilla, amber, and
+          woods, creating a bold and masculine scent.</p>
+        <div class="prices">
+          <span>4 Fregrances</span>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/images/perfume2.jpg" alt="Citrus Zest">
+        <h3>JPG Le Male Elixir</h3>
+        <p> is a powerful, seductive fragrance with spicy cardamom, aromatic lavender, and a rich blend of vanilla,
+          leather, and woods, delivering a bold, magnetic scent.</p>
+        <div class="prices">
+          <span>5 Fregrances</span>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/images/perfume3.jpg" alt="Woodland Walk">
+        <h3>Bleu De Chanel</h3>
+        <p> is a refined, woody fragrance with fresh citrus, warm sandalwood, and rich amber, creating a
+          sophisticated,
+          timeless scent.</p>
+        <div class="prices">
+          <span>4 Fregrances</span>
+          <button>Shop Collection</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="product-grid">
+      <div class="product-grid hidden-products" style="display: none;">
+        <div class="product-card">
+          <img src="/images/perfume1.jpg" alt="Rosewood Bliss">
+          <h3>JPG Le Male Parfum</h3>
+          <p>is a warm, intense fragrance with spicy cardamom, floral lavender, and a rich base of vanilla, amber, and
+            woods, creating a bold and masculine scent.</p>
+          <div class="prices">
+            <span>4 Fregrances</span>
+            <button>Shop Collection</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/images/perfume2.jpg" alt="Citrus Zest">
+          <h3>JPG Le Male Elixir</h3>
+          <p> is a powerful, seductive fragrance with spicy cardamom, aromatic lavender, and a rich blend of vanilla,
+            leather, and woods, delivering a bold, magnetic scent.</p>
+          <div class="prices">
+            <span>5 Fregrances</span>
+            <button>Shop Collection</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="/images/perfume3.jpg" alt="Woodland Walk">
+          <h3>Bleu De Chanel</h3>
+          <p> is a refined, woody fragrance with fresh citrus, warm sandalwood, and rich amber, creating a
+            sophisticated,
+            timeless scent.</p>
+          <div class="prices">
+            <span>4 Fregrances</span>
+            <button>Shop Collection</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------- buttoni show more edhe show less --------->
+
+  <div style="text-align: center; margin-top: 30px;">
+    <button id="togglePerfumesBtn" class="show-more-btn">Show More</button>
+  </div>
+
+  <!--------- javascript per buttonin show more.. ------->
+  <script>
+    const togglePerfumesBtn = document.getElementById("togglePerfumesBtn");
+    const hiddenProducts = document.querySelector(".hidden-products");
+
+    togglePerfumesBtn.addEventListener("click", function () {
+      if (hiddenProducts.style.display === "grid") {
+        hiddenProducts.style.display = "none";
+        togglePerfumesBtn.textContent = "Show More";
+      } else {
+        hiddenProducts.style.display = "grid";
+        togglePerfumesBtn.textContent = "Show Less";
+      }
+    });
+  </script>
+
+  <div class="categories-tx">
+    <h1>Collection <span>Categories</span></h1>
+    <p>Explore our collections by category to find your perfect scent story.</p>
+  </div>
+
+  <section class="categories">
+    <div class="carta" data-aos="fade-up-left">
+      <img src="images/koleksioni1.jpg" alt="Rosewood Bliss">
+      <h3>Seasonal Collections</h3>
+      <p>is a warm, intense fragrance with spicy cardamom, floral lavender, and a rich base of vanilla, amber, and
+        woods, creating a bold and masculine scent.</p>
+      <div class="view-button">
+        <button>Shop Collection</button>
+      </div>
+    </div>
+    <div class="carta" data-aos="fade-up">
+      <img src="images/koleksioni2.webp" alt="Citrus Zest">
+      <h3>JPG Le Male Elixir</h3>
+      <p> is a powerful, seductive fragrance with spicy cardamom, aromatic lavender, and a rich blend of vanilla,
+        leather, and woods, delivering a bold, magnetic scent.</p>
+      <div class="view-button">
+        <button>Shop Collection</button>
+      </div>
+    </div>
+    <div class="carta" data-aos="fade-up-right">
+      <img src="images/koleksioni 3.jpg" alt="Woodland Walk">
+      <h3>Bleu De Chanel</h3>
+      <p> is a refined, woody fragrance with fresh citrus, warm sandalwood, and rich amber, creating a
+        sophisticated,
+        timeless scent.</p>
+      <div class="view-button">
+        <button>Shop Collection</button>
+      </div>
+    </div>
+  </section>
+  <div class="main">
+    <div class="custom">
+      <div class="custom-tx">
+        <h2>Create Your <span>Custom Collection</span></h2>
+        <p>Work with our master perfumers to create a bespoke collection tailored to your preferences. <br> Choose your
+          favorite notes, intensity, and even design custom packaging for a truly unique fragrance experience.</p>
+        <ul>
+          <li><i class="ri-check-line text-primary"></i> Personal consultation with our master perfumer</li>
+          <li><i class="ri-check-line text-primary"></i> Selection from over 200 premium ingredients</li>
+          <li><i class="ri-check-line text-primary"></i> Custom bottle design and personalized packaging</li>
+        </ul>
+        <button>Inquire Now</button>
+      </div>
+      <div class="photo">
+        <img src="images/customc.webp" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="categories-tx">
+    <h1>Stay <span>Updated</span></h1>
+    <p>Subscribe to our newsletter to be the first to know about new collections, <br> exclusive offers, and fragrance
+      insights.</p>
+  </div>
+
+  <div class="address">
+    <input type="text" placeholder="Your email address" class="emailbar2" />
+    <button class="subs">Subscribe</button>
+  </div>
+
+  <div id="sub-ex">
+    <p>By subscribing, you agree to our Privacy Policy. We respect your privacy and <br> will never share your
+      information.</p>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h2 class="footer-logo">Perfume</h2>
+        <p class="footer-text">
+          Crafting exquisite fragrances that capture moments of luxury and elegance since 2010.
+        </p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Shop All</li>
+          <li>Collections</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li>Shipping & Returns</li>
+          <li>Track Order</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Gift Cards</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> 41, Ziaver Vllasaliu, Prishtine</li>
+          <li><i class="fas fa-phone-alt"></i> +383 *** 234</li>
+          <li><i class="fas fa-envelope"></i> perfume@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="end">
+    <p>© 2025 Luxury Perfume. All rights reserved.</p>
+    <div>
+      <i class="ri-visa-fill ri-lg text-gray-300"></i>
+      <i class="ri-mastercard-fill ri-lg text-gray-300"></i>
+      <i class="ri-paypal-fill ri-lg text-gray-300"></i>
+      <i class="ri-apple-fill ri-lg text-gray-300"></i>
+    </div>
+  </div>
+</body>
+
+
+
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>
